@@ -1,0 +1,1 @@
+export const url = 'https://api.rawg.io/api/games?key=dea7d81dcde74e9a856058111223df6b';
