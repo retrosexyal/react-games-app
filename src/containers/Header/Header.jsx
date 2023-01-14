@@ -1,10 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import Input from "../../components/Input/Input";
 
-function Header() {
+function Header({onChange}) {
+
   return (
-    <Link to='/'>Main</Link>
-  )
+    <>
+      <Link to="/">Main</Link>
+      <Input onChange={onChange} />
+    </>
+  );
 }
 
-export default Header
+export default Header;
