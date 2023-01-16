@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Input({onChange}) {
+function Input({onChange, onBlur}) {
   return (
-    <input onChange={onChange} placeholder='search'/>
+    <input onChange={onChange} onBlur={onBlur} placeholder='search'/>
   )
 }
 

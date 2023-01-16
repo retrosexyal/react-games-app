@@ -11,9 +11,18 @@ function App() {
   const handleChange = (e)=>{
     setGame(e.target.value)
   }
+
+  const handleBlur = (e) =>{
+    e.target.value = '';
+  }
+
+  const handleClick = () =>{
+    setGame('')
+  }
+
   return (
   <>
-    <Header onChange={handleChange}/>
+    <Header onChange={handleChange} onBlur={handleBlur} onClick={handleClick}/>
     <Routes>
       <Route path="/" element={<Main game={game}/>}  />
       <Route path="/game/:id" element={<LinkedCard />}  />
